@@ -3,7 +3,6 @@
 This project helps in getting the metadata of a structured database and store the information in another database basically in mongo db.
 
 ### To run the project
-Checkout the development branch as it is the stable branch.
 <hr>
 <p>1. Ensure you have an mysql instance running on server or local system. </p>
 <p>2. Ensure you have an mongodb 4.2+ version instance running on server or local system. </p>
