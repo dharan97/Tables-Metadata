@@ -33,16 +33,11 @@ public class MysqlDatabaseImpl {
 		Connection connection = null;
 		ResultSet resultSet = null;
 		List<TableMetadata> list = null;
-		int count = 0;
 		try {
 			connection = this.dataSource.getConnection();
 			DatabaseMetaData data = connection.getMetaData();
 			resultSet = data.getTables(null, null, null, new String[] { "TABLE" });
 			while (resultSet.next()) {
-				count++;
-				if (count > 10) {
-					break;
-				}
 				if (list == null) {
 					list = new ArrayList<TableMetadata>();
 				}
