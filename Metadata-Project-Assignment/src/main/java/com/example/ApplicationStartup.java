@@ -13,12 +13,8 @@ public class ApplicationStartup implements ApplicationListener<ApplicationReadyE
 	@Autowired
 	private MysqlDatabaseImpl databaseImpl;
 
-//	@Autowired
-//	private MongoRepo mongoRepo;
-
 	@Override
 	public void onApplicationEvent(ApplicationReadyEvent event) {
-
 		databaseImpl.queryForMetadata();
 	}
 
