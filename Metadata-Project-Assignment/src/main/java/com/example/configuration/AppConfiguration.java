@@ -40,11 +40,9 @@ public class AppConfiguration {
 		String db = env.getProperty("mysql.db");
 		String user = env.getProperty("mysql.user");
 		String pswd = env.getProperty("mysql.password");
-//		int max_connections = env.getProperty("mysql.maxconnections", Integer.class);
 		String url = "jdbc:mysql://" + host + ":" + port + "/" + db + "?autoReconnect=true";
 		HikariConfig config = new HikariConfig();
 		config.setJdbcUrl(url);
-//		config.setMaximumPoolSize(max_connections);
 		config.setUsername(user);
 		config.setPassword(pswd);
 		config.setConnectionTimeout(5000);
