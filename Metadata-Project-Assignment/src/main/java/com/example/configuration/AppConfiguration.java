@@ -20,7 +20,6 @@ import org.springframework.data.mongodb.core.mapping.MongoMappingContext;
 import com.mongodb.MongoClient;
 import com.mongodb.MongoClientOptions;
 import com.mongodb.MongoCredential;
-import com.mongodb.ReadPreference;
 import com.mongodb.ServerAddress;
 import com.zaxxer.hikari.HikariConfig;
 import com.zaxxer.hikari.HikariDataSource;
